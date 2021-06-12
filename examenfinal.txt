@@ -1,10 +1,10 @@
 Serie 2_codigo
-      Scanner GIT = new Scanner(System.in);
+      Scanner scn= new Scanner(System.in);
         int [] arreglo = new int [10];
-        int aux, mayor,menor;
-        System.out.println("Increse 10 números");
+        int var, mayor,menor;
+        System.out.println("Ingresar 10 números");
         for (int i = 0; i < 10; i++) {
-            arreglo [i] = GIT.nextInt();
+            arreglo [i] = scn.nextInt();
         }
          mayor = menor = arreglo [0];
             for (int i = 0; i < 10; i++){
@@ -18,9 +18,9 @@ Serie 2_codigo
         for (int i = 0; i < 10 - 1; i++) {
             for (int j = 0; j < 10 - 1; j++) {
                 if (arreglo [j] > arreglo[j+1]) {
-                    aux = arreglo[j];
+                    var = arreglo[j];
                     arreglo[j] = arreglo[j+1];
-                    arreglo [j+1] = aux;
+                    arreglo [j+1] = var;
                 }
             }
         }
